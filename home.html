@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="estilizacao.css">
+    <title>The Sims Place</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li><a class="btn" id="btn-sobre" href="#sobre">Sobre</a></li>
+                    <li><a class="btn" id="btn-familias" href="#familias">Famílias</a></li>
+                    <li><a class="btn" id="btn-profissoes" href="#profissoes">Profissões</a></li>
+                    <li><a class="btn" id="btn-cheats" href="#cheats">Cheats</a></li>
+                    <li><a class="btn" id="btn-trailer" href="#trailer">Trailer</a></li>
+                    <li><a class="btn" id="btn-motivacao" href="#motivacao">Motivações</a></li>                    
+                </ul>
+            </nav>
+        </header>
+        <main class="container-fluid mt-4">
+
+            <button class="botao-audio mute" onclick="toggleAudio()">
+                <i class="fas fa-volume-mute"></i>
+            </button>
+
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <img src="img/title.png" alt="Título" class="title img-fluid">
+                </div>
+            </div>
+            
+            <section id="sobre">
+                <h2>Sobre</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Oi! Meu nome é Gabriela, tenho 21 anos e sou estudante de Comunicação e Publicidade na ESPM de Porto Alegre.</p>
+                        <br>
+                        <p>Sempre fui muito apaixonada por comunicação, inclusive já tive muitos outros blogs. Mas, nenhum falava sobre um dos meus jogos preferidos: o The Sims.</p>
+                        <br>
+                        <p>Esse jogo, que atualmente conta com quatro gerações, fez parte de toda minha infância e adolescência. Eu comecei jogando o 2 e atualmente jogo o 4 (e estou bem ansiosa para o 5). </p>
+                        <br>   
+                        <p>A parte mais divertida dele pra mim, é poder criar diferentes realidades e fazerem elas interagirem entre si, além disso, eu gosto muito das histórias já criadas pelos criadores do jogo, que acompanham cada uma dessas gerações e que vou contar um pouquinho mais por aqui!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="familias">
+                <h2>Famílias</h2>
+                <div class="row">
+                    <div class="col-md-3" class="curiosidade-col">
+                        <a href="caixao.html" class="badge badge-info-hover d-flex flex-column align-items-center">
+                            <img src="img/familia_caixao.webp" alt="arquitetura" class="img-fluid" style="max-width: 100%;">
+                            <span class="mt-2">Família Caixão</span>
+                        </a>
+                    </div>
+                    <div class="col-md-3" class="curiosidade-col">
+                        <a href="quero-tudo.html" class="badge badge-info-hover d-flex flex-column align-items-center">
+                            <img src="img/familia_tudo.webp" alt="arquitetura" class="img-fluid" style="max-width: 100%;">
+                            <span class="mt-2">Família Quero-Tudo-Que-É-Seu</span>
+                        </a>
+                    </div>
+                    <div class="col-md-3" class="curiosidade-col">
+                        <a href="caliente.html" class="badge badge-info-hover d-flex flex-column align-items-center">
+                            <img src="img/familia_caliente.webp" alt="arquitetura" class="img-fluid" style="max-width: 100%;">
+                            <span class="mt-2">Família Caliente</span>
+                        </a>
+                    </div>
+                    <div class="col-md-3" class="curiosidade-col">
+                        <a href="bff.html" class="badge badge-info-hover d-flex flex-column align-items-center">
+                            <img src="img/grupo_bff.webp" alt="arquitetura" class="img-fluid" style="max-width: 100%;">
+                            <span class="mt-2">Grupo BFF</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="profissoes">
+                <h2>Profissões <small>(mais bem avalidas)</small></h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Carreira</th>
+                            <th>Ramo</th>
+                            <th>$/Hora</th>
+                            <th>Horas</th>
+                            <th>$/Dia</th>
+                            <th>Dia(s)</th>
+                            <th>$/Semana</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Militar</td>
+                            <td>Agente Secreto</td>
+                            <td class="dinheiro">$422</td>
+                            <td>8</td>
+                            <td class="dinheiro">$3,376</td>
+                            <td>5</td>
+                            <td class="dinheiro">$16,880</td>
+                        </tr>
+                        <tr>
+                            <td>Militar</td>
+                            <td>Oficial</td>
+                            <td class="dinheiro">$422</td>
+                            <td>8</td>
+                            <td class="dinheiro">$3,376</td>
+                            <td>5</td>
+                            <td class="dinheiro">$16,880</td>
+                        </tr>
+                        <tr>
+                            <td>Influenciador(a) de Estilo</td>
+                            <td>Estilista</td>
+                            <td class="dinheiro">$500</td>
+                            <td>6</td>
+                            <td class="dinheiro">$3,000</td>
+                            <td>5</td>
+                            <td class="dinheiro">$15,000</td>
+                        </tr>
+                        <tr>
+                            <td>Astronauta</td>
+                            <td>Contrabandista Espacial</td>
+                            <td class="dinheiro">$413</td>
+                            <td>9</td>
+                            <td class="dinheiro">$3,717</td>
+                            <td>4</td>
+                            <td class="dinheiro">$14,868</td>
+                        </tr>
+                        <tr>
+                            <td>Jardineiro(a)</td>
+                            <td>Botânica</td>
+                            <td class="dinheiro">$420</td>
+                            <td>7</td>
+                            <td class="dinheiro">$2,940</td>
+                            <td>5</td>
+                            <td class="dinheiro">$14,700</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="cheats">
+                <h2>Cheats</h2>
+                <p>
+                    Confira como abrir o console de comandos de acordo com o dispositivo em que está jogando:
+                    <br>
+                    <br>
+                    <b>PC:</b> Ctrl <i>+</i> Shift <i>+</i> C<br>
+                    <b>Mac:</b> Cmnd <i>+</i> Shift <i>+</i> C<br>
+                    <b>PS4:</b> L1 <i>+</i> L2 <i>+</i> R1 <i>+</i> R2<br>
+                    <b>Xbox</b> One: LT <i>+</i> LB <i>+</i> RT <i>+</i> RB<br>
+                    <br><br>
+                    <ul class="lista-itens list-group flex-sm-column">
+                        <li class="list-group-item"><i class="fas fa-check-circle cheats-true"></i> <b>testingcheatstrue</b> -> Habilita o uso do códigos.</li>
+                        <li class="list-group-item"><i class="fas fa-coins motherlode"></i> <b>motherlode</b> -> você ganha  &nbsp;<span class="dinheiro">$50.000</span>.</li>
+                        <li class="list-group-item"><i class="fas fa-star skill-level"></i> <b>stats.set_skill_level Major_(insira a profissão) 10</b> -> Aumenta o nível de habilidade em 10.</li>
+                        <li class="list-group-item"><i class="fas fa-eye-slash ignore-gameplay"></i> <b>bb.ignoregameplayunlocksentitlement</b> -> Desbloqueia itens de carreira.</li>
+                        <li class="list-group-item"><i class="fas fa-briefcase promote-carreer"></i> <b>carreers.promote (insira a carreira)</b> -> Promove seu Sim na carreira desejada.</li>
+                    </ul>
+                </p>
+            </section>
+
+            <section id="trailer">
+                <h2>Trailer</h2>
+                <div id="trailer-video">
+                    <iframe id="video" width="560" height="315" 
+                            src="https://www.youtube.com/embed/DL2hlOIf-PM?si=WCy6g3dCorgzZZa0"
+                            frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <section id="motivacao">
+                <h2>Motivação</h2>
+                <p>Da primeira vez que joguei The Sims, fiquei um pouco perdida porque não conhecia a maioria das coisas: desde os cheats, mods até as histórias super complexas das famílias pré-existentes.</p><br>
+                <p>Como o The Sims é um dos jogos com mais histórias que se completam e se complementam, em todas as suas gerações, esse blog servirá de guia pra você que ainda não conhece os detalhes e quer saber um pouco mais antes ou durante a jogatina.</p>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/audio.js"></script>
+</html>
